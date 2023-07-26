@@ -1,0 +1,1 @@
+# ts-react-vite-express-fullstack-monorepo-template
