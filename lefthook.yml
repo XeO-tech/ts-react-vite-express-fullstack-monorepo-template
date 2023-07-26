@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint-client:
+      glob: '*.{ts,tsx}'
+      run: npx lerna run lint --scope=client
+    type-client:
+      glob: '*.{ts,tsx}'
+      run: npx lerna run typings --scope=client
+    lint-server:
+      glob: '*.{ts,tsx}'
+      run: npx lerna run lint --scope=server
+    type-server:
+      glob: '*.{ts,tsx}'
+      run: npx lerna run typings --scope=server

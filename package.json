@@ -1,0 +1,41 @@
+{
+  "name": "psim-project",
+  "private": true,
+  "workspaces": [
+    "packages/client",
+    "packages/server"
+  ],
+  "scripts": {
+    "start": "npx lerna run start --scope=server",
+    "build:server": "npx lerna run build --scope=server",
+    "build:client": "npx lerna run build --scope=client",
+    "build": "npx lerna run build",
+    "dev:client": "npx lerna run dev --scope=client",
+    "dev:server": "npx lerna run dev --scope=server",
+    "dev": "npx lerna run dev",
+    "test": "npx lerna run test",
+    "lint": "npx lerna run lint",
+    "preview": "npx lerna run preview",
+    "format": "npx lerna run format"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "jest": "^29.6.1",
+    "lefthook": "^1.4.6",
+    "lerna": "^7.1.4",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  }
+}
