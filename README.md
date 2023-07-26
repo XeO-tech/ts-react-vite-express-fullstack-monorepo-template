@@ -20,3 +20,31 @@ Express server for both client files and API.
 
 ## Lint and test
 Preconfigured eslint, prettier and jest testing enviroment.
+
+## Tips
+
+### First installation
+`npm ci`
+
+### Package installation examples
+Client workspace: ```npm i package_name -w client```
+
+Dev package in server workspace: ```npm i -D package_name -w server```
+
+Packages which are required in both workspaces: ```npm i package_name```
+
+### Linting
+
+`npm run lint`
+
+### Testing
+
+`npm run test`
+
+### Formatting with prettier
+
+`npm run format`
+
+### Production build
+
+`npm run build`
